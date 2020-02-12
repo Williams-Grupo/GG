@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <button class="boton" onclick="action()">Menu</button>
+        <a href="#" class="enlace ocultar">Inicio</a>
+        <a href="#" class="enlace ocultar">Servicios</a>
+        <a href="#" class="enlace ocultar">Nosotros</a>
+        <a href="#" class="enlace ocultar">Contacto</a>
+    </nav>
+    <section>
+        <p class="menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta, ipsa facilis dicta laboriosam minus fuga autem id totam, vero, ut quo adipisci laudantium ipsam hic! Optio illum veniam aperiam!</p>
+        <p class="menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta, ipsa facilis dicta laboriosam minus fuga autem id totam, vero, ut quo adipisci laudantium ipsam hic! Optio illum veniam aperiam!</p>
+        <p class="menu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta, ipsa facilis dicta laboriosam minus fuga autem id totam, vero, ut quo adipisci laudantium ipsam hic! Optio illum veniam aperiam!</p>
+    </section>
+    <script>
+       function action(){
+          var ancla = document.getElementsByClassName('enlace');
+          for(var i = 0; i < ancla.length; i++){
+              ancla[i].classList.toggle('ocultar');
+          }
+
+       }
+    </script>
+</body>
+</html>
